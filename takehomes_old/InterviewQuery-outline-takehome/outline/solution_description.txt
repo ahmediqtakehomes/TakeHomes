@@ -1,0 +1,51 @@
+the simple solution to this problem follows the summary listed in the code:
+
+algorithm:
+open the file
+get the count of how many highest scores to return
+create a map of score to ID
+for each line in the file:
+  try to find a "score"
+     fail if you can't
+  try to find a json string
+     fail if you can't
+  parse the json, extract the ID
+    if no id exists in json at top level, error
+transform the set of scores into an array
+sort that array descending based on score
+slice the arry by the count from the beginning
+return json of the slice
+
+this solves the base case of the problem, but when reviewing it in the course 
+of an onsite, there are several considerations one should think about to discuss
+the problem with an interviewer.
+
+
+1) Longer input file
+
+the input file is very short. approximately 5 lines. what would happen if it were
+50k lines? 500k? too large to fit into memory. 
+being able to discuss the trade offs needed to handle these types of files is important.
+
+for 50k lines, we could probably just run the program as-is with success. 
+for 500k lines, it starts to slow down, but still is linear in output. (i've benchmarked it at about 2s).
+
+for 5m lines, i'd expect that it would grow linearly as a function of input.
+
+for 50m - 500m lines, start considering map/reduce + etl.
+
+you should be able to outline the parts of the code that will cause slowdown. In the case of this problem, the bottleneck wiil always be parsing the JSON.
+
+
+2) longer input lines
+
+The initial input of the file is the happy case. What would we do if in the course of reading the lines, we could no longer read the line itself into the standard buffer allocated? we have to increase the size of the buffer. 
+
+Here's where product/analysis of input comes into play. This is the point where I would ask to see the input file and try to understand its characteristics in order to tailor my program to the needs. 
+
+tuning the program really depends on the desired outcome. This is a key insight worth noting to your reviewer.
+
+*** Clever Bit ***
+
+one thing to notice about the input for very large files is, if we want the top 50 highest scores, 
+the ratio of m to n (where m is the number of high scores, and n is the input size) matters a lot in our optimization. If we change our program to store the highest m scores and their respective lines, we can save ourselves a lot of json processing. this is left as an exercise for the reader.

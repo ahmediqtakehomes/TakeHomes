@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1546912170567.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "2822719650",
+    "id" : "4E45B6A6",
+    "lastKnownWriteTime" : 1547156170,
+    "last_content_update" : 1547156170668,
+    "path" : "~/src/airbnb-interview/interview.R",
+    "project_path" : "interview.R",
+    "properties" : {
+        "cursorPosition" : "175,2",
+        "scrollLine" : "161",
+        "tempName" : "Untitled1"
+    },
+    "relative_order" : 1,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_source"
+}

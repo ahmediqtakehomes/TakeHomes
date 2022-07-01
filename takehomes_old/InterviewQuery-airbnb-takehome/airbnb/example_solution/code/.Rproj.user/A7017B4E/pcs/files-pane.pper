@@ -1,0 +1,9 @@
+{
+    "path" : "~/src/airbnb-interview",
+    "sortOrder" : [
+        {
+            "ascending" : true,
+            "columnIndex" : 2
+        }
+    ]
+}
