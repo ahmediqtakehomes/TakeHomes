@@ -1,6 +1,0 @@
-**/__pycache__/
-
-.env
-data/
-outputs/
-notebooks/.ipynb_checkpoints
