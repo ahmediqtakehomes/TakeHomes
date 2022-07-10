@@ -1,3 +1,5 @@
+![Cloud Kitchens]()
+
 **Engineering Challenge**
 
 Build a set of classes that represents the fulfillment of food orders in
@@ -10,13 +12,24 @@ Create classes as you see fit, each having appropriate encapsulation,
 attributes, and well defined interfaces. All orders should be read from
 a json file containing an array defined as:
 
-![](media/image1.jpg){width="6.1875in" height="2.3333333333333335in"}
+```json
+[
+    {
+        "name": "Cheese Pizza",
+        "temp": "hot",
+        "shelfLife": 300,
+        "decayRate": 0.45
+    },
+    ...
+    ...
+]
+```
 
 Where shelf life is read in second units and the temperatures are hot,
 cold, and frozen.
 
 The kitchen should receive orders at rate following a Poisson
-Distribution with an average of 3.25 deliveries per second (lambda),
+Distribution with an average ($\lambda$) of 3.25 deliveries per second,
 make the order (instant), then place the order on its correct shelf.
 
 There are four types of shelves:
@@ -36,7 +49,9 @@ full then an order should be removed and considered waste.
 Orders that are on a shelf decay (lose value) over time. The value can
 be calculated as:
 
-![](media/image2.jpg){width="6.125in" height="0.3854166666666667in"}
+$$
+\rm value = (\rm shelf \ life - order \ age) - (\rm decay \ rate \ast order \ age)
+$$
 
 Orders that have reached a value of zero are considered waste and should
 be removed from the shelves. Decay rates double for orders on the
@@ -56,22 +71,14 @@ time an order is added or removed.
 Please take your time to delivering a quality solution that shows your
 ability. Include:
 
--   A README file that contains:
+- A description of how and why you chose to handle overflow
 
-    1.  Instruction on how to run and test your code
-
-○ A description of how and why you chose to handle overflow
-
-○ A description of how and why you chose to handle underflow
+- A description of how and why you chose to handle underflow
 
 -   Production ready code that:
-
-    1.  Follows community standard syntax and style
-
-○ Has no debug logging, TODO's, or FIXME's
-
-○ Has test coverage to ensure quality and safety
+    -  Follows community standard syntax and style
+    -  Has no debug logging, TODO's, or FIXME's
+    - Has test coverage to ensure quality and safety
 
 # Extra Credit 
-
-● Abstract the order decay formula so that is can be dynamic per order
+Abstract the order decay formula so that is can be dynamic per order

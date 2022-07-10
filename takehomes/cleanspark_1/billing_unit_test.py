@@ -4,10 +4,9 @@ from math import isclose
 
 import pytest
 
-from clsk import billing
+import billing
 
 
-@pytest.mark.skip(reason='Waiting for candidate to remove.')
 def test_energy_charge():  # noqa: D103
     # Arrange ----------------------------------------------------------------
     data = billing._get_data()
@@ -17,7 +16,6 @@ def test_energy_charge():  # noqa: D103
     assert isclose(result, 7429.879999999999, rel_tol=1e-4)
 
 
-@pytest.mark.skip(reason='Waiting for candidate to remove.')
 def test_demand_charge():  # noqa: D103
     # Arrange ----------------------------------------------------------------
     data = billing._get_data()
