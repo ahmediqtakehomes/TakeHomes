@@ -1,4 +1,6 @@
-# Background
+# 
+
+Background
 
 With recorded vertical acceleration of different cars on a given road,
 we can accurately cancel it using feedforward control. For that purpose,
@@ -11,7 +13,7 @@ assignment, you are asked to train such a model with given data.
 
 # Sample Data
 
-You can find two folders in this repository, they are training data and
+You can find two directories in this notebook, they are  and
 testing data, respectively. Each folder contains multiple CSV files, and
 each of them was extracted from a real drive session of the exact same
 car with same suspension controller settings.

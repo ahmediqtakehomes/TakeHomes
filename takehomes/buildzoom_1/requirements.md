@@ -1,11 +1,8 @@
-On this page you will find links to two files:
-
-\'train_data.csv\' contains data similar to what you would work with at
+# Data Description
+`train_data.csv`: contains data similar to what you would work with at
 BuildZoom. Each of the 100,156 rows represent a building permit and
-there are 7 variables - licensetype, businessname, legaldescription,
-description, type, subtype, and job_value - associated with each permit.
-
-\'train_data.csv\':
+there are 7 variables - `licensetype`, `businessname`, `legaldescription`,
+`description`, `type`, `subtype`, and `job_value` - associated with each permit.
 
 \'xtest_data.csv\' contains 25,149 building permit observations with 6
 variables - licensetype, businessname, legaldescription, description,
