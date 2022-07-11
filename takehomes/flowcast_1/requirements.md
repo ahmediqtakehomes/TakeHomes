@@ -1,13 +1,14 @@
-\"Please follow the instructions below to complete the data science
+![Flowcast](logo.png)
+Please follow the instructions below to complete the data science
 challenge. We expect it to take no longer than 1-2 hours. However, for
 your convenience, we allow 24 hours from the time of receipt to submit
 your code.
 
-**Data Science Interview Challenge:**
+# Data Science Interview Challenge
 
 The goal of this challenge is to produce a sample of your machine
 learning skills as well as your ability to write clean, readable, and
-welldocumented code.
+well-documented code.
 
 # Problem Statement 
 
@@ -19,9 +20,7 @@ tools like credit card skimming devices. Note that this dataset loosely
 resembles real transactional data, but the entities and relations within
 are purely fictional. Please complete the following tasks:
 
-1.  Programmatically download the data from:
-    [[https://github.com/]{.underline}
-    [flowcast/datasci-challenge]{.underline}](https://github.com/flowcast/datasci-challenge)[ ]{.underline}
+1.  Load the data in `transactions.json`
 
 2.  Briefly describe the data structure, provide summary statistics, and
     at least one plot.  
@@ -48,13 +47,8 @@ are purely fictional. Please complete the following tasks:
 
 # Important Guidelines 
 
-Although your submission will be in Python, we wish for you to use any
+Although your submission will be in a Python Notebook, we wish for you to use any
 tools you are comfortable with.
-
--   You are free to choose between notebooks and scripts.  
-
--   You can document within your code or include a separate README file,
-    or some combination of both.  
 
 To provide a fair evaluation, we ask that you:
 
@@ -63,12 +57,3 @@ To provide a fair evaluation, we ask that you:
 -   Stick to the time limit of 1-2 hours. We will evaluate your
     submission knowing that you had limited time and expect a simple yet
     complete and working solution.  
-
-To submit your solution:
-
--   Zip your work and email the results to me. 
-
--   Please do *not* include the downloaded dataset in your submission. 
-
--   To maintain anonymity, please do *not* include your name in your
-    submission, including content and file names.\" 

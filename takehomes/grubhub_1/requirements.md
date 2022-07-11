@@ -1,0 +1,11 @@
+![Grubhub](logo.png)
+
+Given the attached data (`generated_orders1.csv`), which state should we focus our only available
+product development team on? Respond with your answer and reasoning. Where
+you don't have enough data to make a decision, make assumptions and list
+them in your response.
+
+Definitions of data in file:
+- `total_orders`: online food orders placed on grubhub.com
+- `visits`:  the number of unique times people have gone to grubhub.com
+- `revenue`: the amount of money we are making

@@ -1,4 +1,5 @@
-**Applied Data Analyst \| Short project (2-4 hours)**
+![Second Measure](logo.png)
+# Applied Data Analyst | Short project (2-4 hours)
 
 # Scope 
 

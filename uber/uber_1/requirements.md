@@ -1,4 +1,4 @@
-Product DS Exercise 2018 H2
+# Product DS Exercise 2018 H2
 
 Note to candidate:​ please consider the readability of both the SQL and
 any other code you write.
@@ -7,21 +7,23 @@ any other code you write.
 
 ## Part A 
 
-You have a table populated with trip information (named uber_trip) table
-with a rider_id (unique per rider), trip_id (unique per trip),
-trip_timestamp_utc (the UTC timestamp for when the trip began), and
+You have a table populated with trip information (named `uber_trip`) table
+with a `rider_id` (unique per rider), `trip_id` (unique per trip),
+`trip_timestamp_utc` (the UTC timestamp for when the trip began), and
 trip_status, which can either be 'completed' or 'not completed'.
 
+```
 rider_id , trip_id, begintrip_timestamp_utc, trip_status
+```
 
-Write a query to return the trip_id for the 5th completed trip for each
+Write a query to return the `trip_id` for the 5th completed trip for each
 rider. If a rider has completed fewer than five trips, then don't
 include them in the results.
 
 ## Part B 
 
-You are given three separate tables (named trip_initiated, trip_cancel,
-and trip_complete) of the form:
+You are given three separate tables (named `trip_initiated`, `trip_cancel`,
+and `trip_complete`) of the form:
 
 trip_initiated \| trip_id, rider_id, driver_id, timestamp trip_cancel \|
 trip_id, rider_id, driver_id, timestamp trip_complete \| trip_id,

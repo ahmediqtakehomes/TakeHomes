@@ -1,7 +1,6 @@
-> ![](media/image1.png){width="2.08in" height="0.4633333333333333in"}©
-> 2017 Springboard Education Revised: December 12, 2017
+![SpringBoard](logo.png)
 
-Growth Analyst: Skills Assessment
+# Growth Analyst: Skills Assessment
 
 # Background 
 
@@ -18,70 +17,51 @@ There are two payment options under consideration:
 
 Our courses typically have two structures:
 
-> 1\. **Fixed-length:​** Students have to finish the course in a fixed
-> amount of time 2. **Self-paced:​** Students can take as long as they
-> like, and pay as they go
+1. **Fixed-length:​** Students have to finish the course in a fixed
+amount of time 
+2. **Self-paced:​** Students can take as long as they
+like, and pay as they go
 
 We have run a few different experiments in the past and have collected
 data around 3 of our courses. Here's some context about each of these
 courses.
 
-+------+---------+------------------+----------+---------------------+
-| > ** | *       | **Option         | **D      | **Description**     |
-| Cour | *Type** | available from** | efault** |                     |
-| se** |         |                  |          |                     |
-+======+=========+==================+==========+=====================+
-| >    | Fixed   | Jan 2, 2017      | Upfront  | pay upfront for 3   |
-|  DAB | -length |                  |          | months (10%         |
-|      |         |                  |          | discount)           |
-+------+---------+------------------+----------+---------------------+
-| >    | Sel     | Jan 30, 2017     | Subs     | pay upfront for 3   |
-|  DS2 | f-paced |                  | cription | months (20%         |
-|      |         |                  |          | discount)           |
-+------+---------+------------------+----------+---------------------+
-| >    | Sel     | Jan 2, 2017      | Subs     | pay upfront for 6   |
-|  DSC | f-paced |                  | cription | months (20%         |
-|      |         |                  |          | discount)           |
-+------+---------+------------------+----------+---------------------+
+|Course|Type|Option available from|Default|Description|
+|---|---|---|---|---|
+|DAB|Fixed-length|Jan 2, 2017|Upfront|pay upfront for 3 months (10% discount)|
+|DS2|Self-paced|Jan 30, 2017|Subscription|pay upfront for 3 months (20% discount)|
+|DSC|Self-paced|Jan 2, 2017|Subscription|pay upfront for 6 months (20% discount)|
 
 The ​*Option available from​* column indicates the cohort for which both
-payment options were
-
-available. We have cohorts starting approximately every month.
-
-> ![](media/image2.png){width="2.08in" height="0.43333333333333335in"}©
-> 2017 Springboard Education
->
-> Revised: December 12, 2017
+payment options were available. We have cohorts starting approximately every month.
 
 # Challenge 
 
-[This spreadsheet]{.underline}​ contains the data we collected over a few
+`springboard.csv`​ contains the data we collected over a few
 months for each of these courses. Your task is to use this data to
 recommend to Springboard which payment option (if any) is the better
 one. Here are some questions to help you guide your analysis:
 
-A.  Do you have any hypotheses around why the choice of payment option
+1.  Do you have any hypotheses around why the choice of payment option
     (upfront or subscription) should be correlated to completion rates?
 
-B.  Can you summarize and visualize the data in a compact manner,
+2.  Can you summarize and visualize the data in a compact manner,
     preferably in as few charts as possible?
 
-C.  Can you draw any conclusions around whether one option is better
+3.  Can you draw any conclusions around whether one option is better
     than the other? Does the course structure play a role?
 
-D.  What recommendations would you make to Springboard as a business?
+4.  What recommendations would you make to Springboard as a business?
 
-E.  What are some questions you'd want to explore further or experiments
+5.  What are some questions you'd want to explore further or experiments
     that you'd recommend that Springboard runs?
 
 # Deliverables 
 
-1.  A short slide deck (fewer than 10 slides) summarizing your analysis
+1.  A short notebook (About a 10 min read, excluding code) summarizing your analysis
 
-2.  Your actual analysis (spreadsheet, code, etc). You can use any tools
+2.  Your actual analysis (spreadsheet, code, etc) described/included in the above notebook. You can use any tools
     or languages of your choice.
 
-*Please treat this assignment as if you were a colleague, and feel free
-to email me any questions to validate your assumptions. Please state any
+*Please treat this assignment as if you were a colleague. Please state any
 assumptions you make clearly in your submission.*
